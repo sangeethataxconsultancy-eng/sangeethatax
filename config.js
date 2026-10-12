@@ -67,11 +67,60 @@ const siteData = {
         { 
             title: "Income Tax Filing", 
             icon: "fa-solid fa-indian-rupee-sign", 
-            desc: "ITR Form filings, TDS, PF, and ESI return management.",
+            desc: "ITR-1 to ITR-4 filings, presumptive taxation, TDS returns, and tax planning.",
             subServices: [
-                { name: "ITR-1 (Salaried Individual)", docs: ["Form-16", "PAN & Aadhaar", "Bank Account Details", "Investment Proofs (LIC/PPF)", "Rent Receipts"] },
-                { name: "ITR-2/3 (Business/Capital Gains)", docs: ["Profit & Loss Statement", "Bank Statements (1 Year)", "Stock Statement (if any)", "Broker Statement (Capital Gains)", "PAN & Aadhaar"] },
-                { name: "TDS Return Filing", docs: ["Deductee Details (PAN/Amount)", "Challan Copies", "Digital Signature", "TAN Details", "Quarterly Transaction record"] }
+                { 
+                    name: "ITR-1 (Salaried Individual - Sahaj)", 
+                    docs: [
+                        "Form-16 from Employer", 
+                        "PAN & Aadhaar Card", 
+                        "All Active Bank Account Statements", 
+                        "Investment & Deduction Proofs (80C, 80D, LIC, PPF)", 
+                        "House Rent Receipts & Home Loan Interest Certificate"
+                    ] 
+                },
+                { 
+                    name: "ITR-2 (Capital Gains & Multiple Properties)", 
+                    docs: [
+                        "PAN & Aadhaar Card", 
+                        "Capital Gain Statements from Brokers (Shares, Mutual Funds)", 
+                        "Property Sale / Purchase Deeds & Valuation Details", 
+                        "All Bank Statements (Entire Financial Year)", 
+                        "Form 26AS, AIS & TIS Reports"
+                    ] 
+                },
+                { 
+                    name: "ITR-3 (Business & Professional - Regular Books)", 
+                    docs: [
+                        "Profit & Loss Account and Balance Sheet", 
+                        "Books of Accounts & Expense Vouchers", 
+                        "Bank Statements (All Business & Personal Accounts)", 
+                        "GST Turnover Summary / Annual Return Copy", 
+                        "Fixed Asset Schedule & Depreciation Details"
+                    ] 
+                },
+                { 
+                    name: "ITR-4 (Presumptive Taxation - Sugam 44AD / 44ADA / 44AE)", 
+                    docs: [
+                        "PAN Card & Aadhaar Card", 
+                        "Gross Business Turnover or Professional Receipts Breakdown", 
+                        "Bank Statements for the Entire Financial Year (Bank & Cash Receipts)", 
+                        "Form 26AS, AIS (Annual Information Statement) & TIS", 
+                        "GST Filing Summary / GSTR-1 Annual Turnover (if GST registered)", 
+                        "Advance Tax / Self-Assessment Tax Paid Challan Copies", 
+                        "Eligible Chapter VI-A Deduction Proofs (80C, 80D, etc.)"
+                    ] 
+                },
+                { 
+                    name: "TDS Return Filing", 
+                    docs: [
+                        "Deductee PAN & Transaction Breakdown", 
+                        "TDS Payment Challans (Challan 281)", 
+                        "Valid Class-3 Digital Signature Certificate (DSC)", 
+                        "TAN Details & Entity Profile", 
+                        "Quarterly Salary & Non-Salary Deductions Summary"
+                    ] 
+                }
             ]
         },
         { 
