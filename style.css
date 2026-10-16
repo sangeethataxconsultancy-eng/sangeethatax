@@ -1085,12 +1085,14 @@ footer {
   .hero-title { font-size: 3rem; }
   .about-grid { grid-template-columns: 1fr; }
   .about-image { order: -1; }
-  
+}
+
+@media (max-width: 767px) {
   .nav-links, .nav-cta { display: none; }
   .menu-toggle { display: block; }
   
-  .nav-active {
-    display: flex;
+  .nav-links.nav-active {
+    display: flex !important;
     flex-direction: column;
     position: absolute;
     top: 80px;
@@ -1101,6 +1103,17 @@ footer {
     box-shadow: var(--shadow-md);
     gap: 20px;
     text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-links {
+    display: flex !important;
+    flex-direction: row;
+  }
+  /* மொபைல் ஹேம்பர்கர் ஐகானை மறைக்க */
+  .menu-toggle {
+    display: none !important;
   }
 }
 
